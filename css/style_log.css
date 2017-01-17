@@ -1,0 +1,80 @@
+body.login{
+	background:url(../img/login_bgx.gif);
+    color: #797979;
+    font-size: 13px;
+}
+.login_m{
+	width:403px;
+	margin:0 auto; 
+	height:375px; 
+	margin-top:98px;
+	}
+.login_logo{
+ text-align:center;
+  margin-bottom:10px;
+}
+.login_boder{
+	background:;
+	height:302px; 
+	overflow:hidden;
+}
+#error {
+    line-height: 12px;
+    color: red;
+    font-size: 12px;
+    visibility:hidden;
+}
+.login_padding {
+    padding: 0px 47px 20px 47px;
+}
+.login_boder h2 {
+    color: #4f5d80;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 11px;
+ /*text-transform: uppercase;*/
+}
+.login_boder input.txt_input {
+
+  /*  background: rgba(0, 0, 0, 0) url("../img/txt_input_bg.gif") no-repeat scroll 0 0;*/
+    border: 1px solid #cad2db;
+    border-radius: 5px;
+    color: #717171;
+    font-family: Arial;
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: 5px;
+    /*padding: 0 5px;*/
+    width: 295px;
+}
+.login_boder p.forgot {
+    font-size: 11px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+.login_boder p.forgot a:visited {
+    color: #8c8e91;
+}
+.login_boder p.forgot a:link {
+    color: #58595b;
+    text-decoration: none;
+}
+.login_boder p.forgot a:hover{
+    color:#206fd5;
+}
+.sub input.sub_button{ 
+    float:right; 
+    width:122px;
+    height:32px; 
+    background:url(../img/site_bg.png) no-repeat -153px -850px;
+    border:none; 
+    color:#FFF; 
+    padding-bottom:2px; 
+    font-size:14px; 
+    font-weight:bold;
+}
+.sub input.sub_button:hover{
+    background-position:-153px -882px; 
+    cursor:pointer;
+}

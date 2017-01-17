@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>会议室预约</title>
+
+    <!--<link href="css/datepicker3.css" rel="stylesheet">-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style_index.css"/>
+    <!-- <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <script src="js/jquery.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <nav class="navbar" role="navigation">
+        <div class='container_header'>
+            <p>WELCOME</p>
+            <ul class="user_menu">
+                <li class="dropdown pull-right">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-user"></span> User <span class="caret"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar collapse in">
+        <ul class="nav menu">
+            <li><a href="index.html"><span class="glyphicon glyphicon-dashboard"></span> 新闻通知</a></li>
+            <li class="active"><a href="meetingrooms.html"><span class="glyphicon glyphicon-th"></span> 会议室预定</a></li>
+            <li><a href="charts.html"><span class="glyphicon glyphicon-pencil"></span> 出差登记</a></li>
+            <li><a href="tables.html"><span class="glyphicon glyphicon-list-alt"></span> 请假申请</a></li>
+        </ul>
+    </div>
+    <div class="col-sm-9  col-lg-10 main">
+        <div class="row">
+
+        </div><!--/.row-->
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">新闻通知</h1>
+            </div>
+        </div><!--/.row-->
+
+
+        <div class="row">
+            <div class="col-md-8">
+
+                <div class="panel panel-default chat">
+                    <div class="panel-heading" id="accordion"><span class="glyphicon glyphicon-comment"></span> Chat</div>
+                    <div class="panel-body">
+                        <ul>
+                            <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="http://placehold.it/80/30a5ff/fff" alt="User Avatar" class="img-circle">
+                                    </span>
+                                <div class="chat-body clearfix">
+                                    <div class="header">
+                                        <strong class="primary-font">John Doe</strong> <small class="text-muted">32 mins ago</small>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ante turpis, rutrum ut ullamcorper sed, dapibus ac nunc. Vivamus luctus convallis mauris, eu gravida tortor aliquam ultricies.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="http://placehold.it/80/dde0e6/5f6468" alt="User Avatar" class="img-circle">
+                                    </span>
+                                <div class="chat-body clearfix">
+                                    <div class="header">
+                                        <strong class="pull-left primary-font">Jane Doe</strong> <small class="text-muted">6 mins ago</small>
+                                    </div>
+                                    <p>
+                                        Mauris dignissim porta enim, sed commodo sem blandit non. Ut scelerisque sapien eu mauris faucibus ultrices. Nulla ac odio nisl. Proin est metus, interdum scelerisque quam eu, eleifend pretium nunc. Suspendisse finibus auctor lectus, eu interdum sapien.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="http://placehold.it/80/30a5ff/fff" alt="User Avatar" class="img-circle">
+                                    </span>
+                                <div class="chat-body clearfix">
+                                    <div class="header">
+                                        <strong class="primary-font">John Doe</strong> <small class="text-muted">32 mins ago</small>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ante turpis, rutrum ut ullamcorper sed, dapibus ac nunc. Vivamus luctus convallis mauris, eu gravida tortor aliquam ultricies.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="panel-footer">
+                        <div class="input-group">
+                            <input id="btn-input" class="form-control input-md" placeholder="Type your message here..." type="text">
+                            <span class="input-group-btn">
+                                    <button class="btn btn-success btn-md" id="btn-chat">Send</button>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!--/.col-->
+
+            <div class="col-md-4">
+
+                <div class="panel panel-blue">
+                    <div class="panel-heading dark-overlay"><span class="glyphicon glyphicon-check"></span>To-do List</div>
+                    <div class="panel-body">
+                        <ul class="todo-list">
+                            <li class="todo-list-item">
+                                <div class="checkbox">
+                                    <input id="checkbox" type="checkbox">
+                                    <label for="checkbox">Make a plan for today</label>
+                                </div>
+                                <div class="pull-right action-buttons">
+                                    <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+                                    <a href="#" class="flag"><span class="glyphicon glyphicon-flag"></span></a>
+                                    <a href="#" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                                </div>
+                            </li>
+                            <li class="todo-list-item">
+                                <div class="checkbox">
+                                    <input id="checkbox" type="checkbox">
+                                    <label for="checkbox">Update Basecamp</label>
+                                </div>
+                                <div class="pull-right action-buttons">
+                                    <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+                                    <a href="#" class="flag"><span class="glyphicon glyphicon-flag"></span></a>
+                                    <a href="#" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                                </div>
+                            </li>
+                            <li class="todo-list-item">
+                                <div class="checkbox">
+                                    <input id="checkbox" type="checkbox">
+                                    <label for="checkbox">Send email to Jane</label>
+                                </div>
+                                <div class="pull-right action-buttons">
+                                    <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+                                    <a href="#" class="flag"><span class="glyphicon glyphicon-flag"></span></a>
+                                    <a href="#" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                                </div>
+                            </li>
+                            <li class="todo-list-item">
+                                <div class="checkbox">
+                                    <input id="checkbox" type="checkbox">
+                                    <label for="checkbox">Drink coffee</label>
+                                </div>
+                                <div class="pull-right action-buttons">
+                                    <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+                                    <a href="#" class="flag"><span class="glyphicon glyphicon-flag"></span></a>
+                                    <a href="#" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                                </div>
+                            </li>
+                            <li class="todo-list-item">
+                                <div class="checkbox">
+                                    <input id="checkbox" type="checkbox">
+                                    <label for="checkbox">Do some work</label>
+                                </div>
+                                <div class="pull-right action-buttons">
+                                    <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+                                    <a href="#" class="flag"><span class="glyphicon glyphicon-flag"></span></a>
+                                    <a href="#" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                                </div>
+                            </li>
+                            <li class="todo-list-item">
+                                <div class="checkbox">
+                                    <input id="checkbox" type="checkbox">
+                                    <label for="checkbox">Tidy up workspace</label>
+                                </div>
+                                <div class="pull-right action-buttons">
+                                    <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+                                    <a href="#" class="flag"><span class="glyphicon glyphicon-flag"></span></a>
+                                    <a href="#" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="input-group">
+                            <input id="btn-input" class="form-control input-md" placeholder="Add new task" type="text">
+                            <span class="input-group-btn">
+                                    <button class="btn btn-primary btn-md" id="btn-todo">Add</button>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!--/.col-->
+        </div><!--/.row-->
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
